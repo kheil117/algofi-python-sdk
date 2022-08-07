@@ -107,6 +107,8 @@ class Market:
         self.underlying_borrowed = state.get(MARKET_STRINGS.underlying_borrowed, 0)
         self.underlying_reserves = state.get(MARKET_STRINGS.underlying_reserves, 0)
         self.borrow_share_circulation = state.get(MARKET_STRINGS.borrow_share_circulation, 0)
+        self.b_asset_to_underlying_exchange_rate = state.get(MARKET_STRINGS.b_asset_to_underlying_exchange_rate, 0)
+        self.underlying_to_borrow_share_exchange_rate = state.get(MARKET_STRINGS.underlying_to_borrow_share_exchange_rate, 0)
         self.b_asset_circulation = state.get(MARKET_STRINGS.b_asset_circulation, 0)
         self.active_b_asset_collateral = state.get(MARKET_STRINGS.active_b_asset_collateral, 0)
         self.underlying_protocol_reserve = state.get(MARKET_STRINGS.underlying_protocol_reserve, 0)
